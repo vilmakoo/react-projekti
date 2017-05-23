@@ -3,3 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.kirjoitettava-asia {
+  white-space: pre;
+}
