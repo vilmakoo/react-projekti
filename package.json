@@ -5,15 +5,17 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "redux": "^3.6.0"
   },
   "devDependencies": {
+    "ava": "^0.19.1",
     "react-scripts": "0.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "ava",
     "eject": "react-scripts eject"
   }
 }

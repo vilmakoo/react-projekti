@@ -18,9 +18,9 @@ class Vastaus extends React.Component {
     this.setState({value: event.target.value});
   }
 
-  tarkistaOnkoOikein() {
+  tarkistaOnkoOikein(annettuMjono) {
     var onkoOikein = "Kirjoitus palautettu oikein! Päivitä sivu uuden tehtävän saamiseksi.";
-    var annettuMjono = this.state.value;
+    // var annettuMjono = this.state.value;
     var varjattyMjono = "";
 
     for (var i = 0; i < annettuMjono.length; i++) {
@@ -42,7 +42,7 @@ class Vastaus extends React.Component {
 
 
   handleSubmit(event) {
-    let onkoOikein = this.tarkistaOnkoOikein();
+    let onkoOikein = this.tarkistaOnkoOikein(this.state.value);
     alert(onkoOikein);
     event.preventDefault();
     // ReactDOM.render(
